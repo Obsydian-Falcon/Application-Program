@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Hello!</title>
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>  
+  <body>
+    <h1>A Simple Memory Test</h1>
+    
+    <p>
+      Hello there! You've obviously come to test your memeory against that of a machine 
+      and obviously not to pass judgement on a group of squares and the sounds they make.<br/>
+      <br/>
+      If you'd like a little extra, I'll play you the hints to a song! If you get those hints right
+      you might be able to piece together the theme of a certain Speed Demon.
+    </p>
+    
+    <button id="startBtn" onclick="startGame()">
+      Start
+    </button>
+    <button id="stopBtn" class="hidden" onclick = "stopGame()">
+      End
+    </button>
+    <button id="muscBtn" onclick = "playMusic()">
+      Play A Song
+    </button>
+    <button id="muscBtnStop" class="hidden" onclick = "stopMusic()">
+      Stop The Music
+    </button>
+    
+    
+    <div id = "gameButtonArea">
+      <button id="button1" onclick="guess(1)" onmousedown="startTone(1)" onmouseup="stopTone()" ></button> 
+      <button id="button2" onclick="guess(2)" onmousedown="startTone(2)" onmouseup="stopTone()"></button>  
+      <button id="button3" onclick="guess(3)" onmousedown="startTone(3)" onmouseup="stopTone()"></button>  
+      <button id="button4" onclick="guess(4)" onmousedown="startTone(4)" onmouseup="stopTone()"></button> 
+      <button id="button5" class="hidden" onclick="guess(5)" onmousedown="startTone(5)" onmouseup="stopTone()"></button> 
+      <button id="button6" class="hidden" onclick="guess(6)" onmousedown="startTone(6)" onmouseup="stopTone()"></button> 
+    <div/>
+    
+    </div>
+    
+  </body>
+</html>
